@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1 id="welcome-heading"> ✨ Welcome to your daily tarot reading! ✨ </h1>
+        <p> Clear your mind, let it relax and think of a question you would like insight on. </p>
+
+        <!-- Layout container matching your CSS selector #tarot-layout -->
+        <div id="card-layout">
+    <div id="card-container">
+        <!-- Left Side Stars -->
+        <div class="star-group left-stars">
+            <p id="star1" class="background-star" onmouseenter="glowStar1()" onmouseleave="resetStar1()">★</p> 
+            <p id="star2" class="background-star" onmouseenter="glowStar2()" onmouseleave="resetStar2()">★</p> 
+        </div>
+
+        <!-- Your Tarot Card Box -->
+        <div id="tarrotCard"> 
+            <img src="virgo_card_back.png" alt="Virgo Tarot Card" class="tarot-image">
+        </div>
+
+        <!-- Right Side Stars -->
+        <div class="star-group right-stars">
+            <p id="star3" class="background-star" onmouseenter="glowStar3()" onmouseleave="resetStar3()">★</p> 
+            <p id="star4" class="background-star" onmouseenter="glowStar4()" onmouseleave="resetStar4()">★</p> 
+        </div>
+    </div>
+</div>
+        <div class="button-group">
+            <button onclick="drawCard()">Draw daily card</button>
+            <button onclick="resetApp()">Return</button>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

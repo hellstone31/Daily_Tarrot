@@ -1,0 +1,86 @@
+body {
+    background-color: #1a1a24;
+    color: rgb(255, 56, 122);
+    font-family: arial, sans-serif;
+    font-size: large;
+    text-align: center;
+    padding: 50px;
+}
+
+/* Centers everything on the page */
+#card-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+}
+
+/* Tight container holding the card and stars together */
+#card-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Puts the stars literally right next to the card border! */
+}
+
+/* Groups for top/bottom stars on each side */
+.star-group {
+    display: flex;
+    flex-direction: column;
+    gap: 180px; /* Vertical space between top and bottom star */
+}
+
+#tarrotCard {
+    width: 300px;
+    height: 400px;
+    background-color: #2b2b3d;
+    border: 2px solid #d4af37;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
+    box-sizing: border-box; 
+    margin: 0; /* Remove auto margin so gap controls spacing */
+}
+
+/* Here controls the size of the card image to make it fit inside the space needed */
+.tarot-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+button {
+    background-color: #ffff00;
+    color: #1a1a24;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+button:hover {
+    background-color: #f7078b;
+}
+/* Container for buttons */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+/* Styling for the background stars */
+.background-star {
+    font-size: 55px;
+    color: #fff126; /* Gold */
+    cursor: pointer;
+    transition: 0.4s;
+    margin: 0;
+}
